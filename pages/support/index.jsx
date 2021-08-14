@@ -1,4 +1,4 @@
-import { createPage } from "~/core/createPage"
+import { createPage } from '~/core'
 
 const SupportPage = () => {
   return createPage({

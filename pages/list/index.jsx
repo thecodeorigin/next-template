@@ -1,5 +1,7 @@
 import { Table, Tag, Space } from 'antd';
-import { createPage } from "~/core/createPage"
+import { createPage } from '~/core'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 
 const columns = [
@@ -76,6 +78,12 @@ const data = [
 ];
 
 const ResultsPage = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    console.log(router)
+  })
+
   return createPage({
     head: {
       title: 'Results page',

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export const createPage = (context) => {
+const createPage = (context) => {
   return (
     <>
       <Head>
@@ -13,3 +13,4 @@ export const createPage = (context) => {
   )
 }
 
+export default createPage

@@ -10,6 +10,10 @@
 
   .sidebarLogoWrapper {
     @include flexCenter();
+
+    img {
+      cursor: pointer;
+    }
   }
 
   background-color: color(secondary);

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export const useClientOnly = () => {
+const useClientOnly = () => {
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -9,3 +9,5 @@ export const useClientOnly = () => {
 
   return { isClient }
 }
+
+export default useClientOnly

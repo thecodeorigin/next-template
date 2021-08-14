@@ -1,5 +1,5 @@
 module.exports = {
-  reactStrictMode: true,
+  // reactStrictMode: true, // Can create warnings while using 3rd party library that is not strict
   webpackDevMiddleware: config => {
     config.watchOptions = {
       poll: 1000,

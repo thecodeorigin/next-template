@@ -1,14 +1,15 @@
 import { Menu } from 'antd';
+import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
-import { useClientOnly } from '~/use/client-only';
+
+import { useClientOnly } from '~/core';
 import { routesTree } from '~/constants/routes'
 import { NAVBAR_HEIGHT as navbarheight } from '~/constants/layout'
 
 import Image from 'next/image'
 
 import styles from './style.module.scss'
-
 
 // Recursive sidebar tree
 const SidebarTree = (tree) => tree.map((branch) => (
@@ -21,7 +22,6 @@ const SidebarTree = (tree) => tree.map((branch) => (
     </Menu.Item>
 ))
 
-
 const Sidebar = () => {
   const { isClient } = useClientOnly()
   const router = useRouter();
@@ -30,6 +30,14 @@ const Sidebar = () => {
     router.push(item.key)
   }
 
+  const handleLogoClick = (item) => {
+    router.push('/')
+  }
+
+  useEffect(() => {
+    console.log(router)
+  })
+
   return (
     isClient &&
     <aside
@@ -37,12 +45,19 @@ const Sidebar = () => {
       className={styles.sidebarWrapper}
     >
       <div style={{ height: navbarheight }} className={styles.sidebarLogoWrapper}>
-        <Image src="/dsc_logo.png" alt="GDSC logo" height="50" width="100" objectFit="cover" />
+        <Image
+          src="/dsc_logo.png"
+          alt="GDSC logo"
+          height="50"
+          width="100"
+          objectFit="cover"
+          onClick={handleLogoClick}
+        />
       </div>
       <Menu
         className={styles.sidebarInner}
-        defaultSelectedKeys={[router.route]}
-        defaultOpenKeys={[router.route]}
+        defaultOpenKeys={[router.route]} // Sub menu
+        defaultSelectedKeys={[router.route]} // Menu item
         onClick={handleMenuItemClick}
         theme="dark"
         mode="inline"
