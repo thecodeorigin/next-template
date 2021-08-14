@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import 'tailwindcss/tailwind.css'
+import 'antd/dist/antd.css'
+import '~/public/icons/style.css'
+import '~/styles/globals.scss'
+import Default from '~/core/layout/default'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function Root({ Component, pageProps }) {
+  return (
+    <Default>
+      <Component {...pageProps} />
+    </Default>
+  )
 }
 
-export default MyApp
+export default Root;
+

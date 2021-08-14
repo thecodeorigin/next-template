@@ -1,0 +1,17 @@
+@import '~/styles/mixins';
+@import '~/styles/colors';
+@import '~/styles/variables';
+
+.navbarWrapper {
+  width: 100%;
+  padding: 0 $padding-page-base;
+
+  @include flexBox($align: flex-end, $justify: space-between);
+}
+
+.navbarTitle {
+  font-size: $font-size-title;
+  line-height: $font-size-title;
+  font-weight: bold;
+  margin: 0;
+}
