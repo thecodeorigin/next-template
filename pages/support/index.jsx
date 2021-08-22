@@ -1,11 +1,12 @@
-import { createPage } from '~/core'
+import { usePage } from '~/core'
 
 const SupportPage = () => {
-  return createPage({
+  return usePage({
     head: {
       title: 'Support page',
       description: 'This is the support page',
     },
+    auth: true,
     template: (context) => (
       <main>
       </main>

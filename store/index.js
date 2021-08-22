@@ -6,6 +6,6 @@ const initialState = {
 }
 
 // import { useReduxStore } from '~/core'
-// const { state, store, actions } = useReduxStore()
+// const { store, actions } = useReduxStore()
 // store.dispatch(actions.incremented())
 export default createStore('root', initialState, reducers)

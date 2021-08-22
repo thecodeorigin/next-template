@@ -1,5 +1,5 @@
 import { Table, Tag, Space } from 'antd';
-import { createPage } from '~/core'
+import { usePage } from '~/core'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
@@ -84,11 +84,12 @@ const ResultsPage = () => {
     console.log(router)
   })
 
-  return createPage({
+  return usePage({
     head: {
       title: 'Results page',
       description: 'This is the results page',
     },
+    auth: true,
     template: (context) => (
       <main>
         <Table columns={columns} dataSource={data} />

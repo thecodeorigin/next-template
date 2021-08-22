@@ -1,0 +1,101 @@
+@import '~/styles/mixins';
+@import '~/styles/colors';
+@import '~/styles/variables';
+
+$item-height: 50px;
+
+.formWrapper {
+  width: 600px;
+  min-height: 100px;
+  padding: 2rem;
+  background-color: white;
+  border-radius: $rounded;
+  h1 {
+    text-align: center;
+    font-size: $font-size-larger;
+    color: color(gray, 600);
+  }
+}
+.formButtonsWrapper {
+  @include flexBox($gap: 1rem);
+}
+.formButtonFacebook {
+  @include flexBox($align: center, $gap: 0.5rem, $justify: center);
+
+  font-size: $font-size-large;
+  height: $item-height;
+  border-radius: $rounded;
+  flex: 1;
+  background-color: $--color-facebook;
+  border-color: $--color-facebook;
+  
+  &:hover {
+    background-color: $--color-facebook-darker;
+  }
+  &:focus {
+    background-color: $--color-facebook-darker;
+  }
+}
+.formButtonGoogle {
+  @include flexBox($align: center, $gap: 0.5rem, $justify: center);
+
+  font-size: $font-size-large;
+  height: $item-height;
+  border-radius: $rounded;
+  flex: 1;
+}
+.formButtonSubmit {
+  height: $item-height;
+  width: 100%;
+  border-radius: $rounded;
+  background-color: color();
+  border-color: color();
+  
+  &:hover {
+    background-color: color($scale: 600);
+  }
+  &:focus {
+    background-color: color($scale: 600);
+  }
+}
+.formInner {
+  margin: 2rem 0 3rem;
+}
+.formInputWrapper {
+  :global {
+    .ant-form-item-label {
+      label {
+        font-size: $font-size-large;
+        line-height: $font-size-large;
+        color: color(gray, 600);
+      }
+    }
+    .ant-form-item-children-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.formInputInner {
+  height: $item-height;
+  border-radius: $rounded;
+  font-weight: bold;
+  &::placeholder {
+    font-weight: normal;
+  }
+  &:hover {
+    border-color: color();
+  }
+  &:focus {
+    border-color: color();
+    box-shadow: $shadow-input;
+  }
+}
+.formFooter {
+  text-align: center;
+  color: color(gray, 600);
+  a {
+    color: color();
+  }
+}

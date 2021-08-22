@@ -10,16 +10,20 @@ $--color-yellow: #ffc107;
 $--color-green: #67c23a;
 $--color-teal: #20c997;
 $--color-cyan: #69c7e4;
-$--color-light: #f8f9fa;
-$--color-dark: #343a40;
 
-$--color-primary: #e0952d;
-$--color-secondary: #1A1B3D;
+$--color-primary: #00CE6B;
+$--color-secondary: #1D1546;
+$--color-light: #FFFFFF;
+$--color-dark: #221F20;
+
 $--color-success: #00D26D;
-$--color-danger: #f56c6c;
+$--color-danger: #cc4a4a;
 $--color-warning: #e6a23c;
 $--color-info: #909399;
 $--color-gray: #6c757d;
+
+$--color-facebook: #3b5998;
+$--color-facebook-darker: #2b457e;
 
 /* AUTO-GENERATED COLOR PALLETE - DO NOT TOUCH! */
 $palettes: (
@@ -99,6 +103,17 @@ $palettes: (
     700: mix($--color-black, $--color-gray, 40%),
     800: mix($--color-black, $--color-gray, 50%),
     900: mix($--color-black, $--color-gray, 90%),
+  ),
+  light: (
+    100: mix($--color-white, $--color-light, 90%),
+    200: mix($--color-white, $--color-light, 60%),
+    300: mix($--color-white, $--color-light, 40%),
+    400: mix($--color-white, $--color-light, 20%),
+    500: $--color-light,
+    600: mix($--color-black, $--color-light, 20%),
+    700: mix($--color-black, $--color-light, 40%),
+    800: mix($--color-black, $--color-light, 50%),
+    900: mix($--color-black, $--color-light, 90%),
   ),
   dark: (
     100: mix($--color-white, $--color-dark, 90%),

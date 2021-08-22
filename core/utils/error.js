@@ -1,0 +1,1 @@
+export const getError = (err) => err.response?.data.error?.message || err.message

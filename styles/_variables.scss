@@ -2,11 +2,18 @@ $height-sidebar-item: 50px;
 
 $padding-page-base: 2rem;
 
+$font-size-smaller: 0.5rem;
+$font-size-small: 0.75rem;
+$font-size-base: 1rem;
+$font-size-large: 1.25rem;
+$font-size-larger: 2rem;
 $font-size-title: 4rem;
 
 $shadow-light: 1px 1px 3px 0 color(gray, 100);
 $shadow-base: 1px 1px 3px 0 color(gray, 200);
 $shadow-dark: 1px 1px 3px 0 color(gray, 400);
+
+$shadow-input: 0 0 0 2px rgba(24, 255, 113, 0.2);
 
 $border-thin: 1px solid color(primary, 600);
 $border-base: 2px solid color(primary, 600);
@@ -16,3 +23,9 @@ $duration-base: 300ms;
 $duration-fast: 150ms;
 $duration-slow: 500ms;
 $duration-slower: 1000ms;
+
+$rounded-sm: 3px;
+$rounded: 6px;
+$rounded-lg: 10px;
+$rounded-xl: 14px;
+$rounded-full: 9999px;

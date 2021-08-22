@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?349tb1');
-  src:  url('fonts/icomoon.eot?349tb1#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?349tb1') format('truetype'),
-    url('fonts/icomoon.woff?349tb1') format('woff'),
-    url('fonts/icomoon.svg?349tb1#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?gt0wa2');
+  src:  url('fonts/icomoon.eot?gt0wa2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?gt0wa2') format('truetype'),
+    url('fonts/icomoon.woff?gt0wa2') format('woff'),
+    url('fonts/icomoon.svg?gt0wa2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-pencil:before {
+  content: "\f040";
+}
+.icon-bar-chart:before {
+  content: "\f080";
+}
+.icon-globe:before {
+  content: "\f0ac";
+}
+.icon-google .path1:before {
+  content: "\e90d";
+  color: rgb(66, 133, 244);
+}
+.icon-google .path2:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(52, 168, 83);
+}
+.icon-google .path3:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(251, 188, 5);
+}
+.icon-google .path4:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(234, 67, 53);
+}
 .icon-comment-stroke:before {
   content: "\e900";
 }
@@ -70,6 +98,12 @@
 .icon-search:before {
   content: "\e986";
 }
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-switch:before {
+  content: "\e9b6";
+}
 .icon-plus:before {
   content: "\ea0a";
 }
@@ -88,9 +122,21 @@
 .icon-checkmark:before {
   content: "\ea10";
 }
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
 .icon-checkbox-checked:before {
   content: "\ea52";
 }
 .icon-checkbox-unchecked:before {
   content: "\ea53";
+}
+.icon-facebook:before {
+  content: "\ea91";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-reddit:before {
+  content: "\eac6";
 }
